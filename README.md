@@ -1,16 +1,16 @@
-# NextRev Company Website
+# Next Rev Company Website
 
-Official website for NextRev - Business Solutions
+Official website for Next Rev - Business Solutions
 
 ## About
 
-NextRev creates software solutions for businesses. Our products include:
-- **MemberLink** - Membership management for Clover POS systems
+Next Rev creates software solutions for businesses. Our products include:
+- **Member Link** - Membership management for Clover POS systems
 
 ## Website Structure
 
 - `index.html` - Homepage
-- `products.html` - Products overview (MemberLink)
+- `products.html` - Products overview (Member Link)
 - `contact.html` - Contact information
 - `privacy.html` - Privacy Policy (DRAFT - needs customization)
 - `terms.html` - Terms of Service (DRAFT - needs customization)
@@ -20,7 +20,7 @@ NextRev creates software solutions for businesses. Our products include:
 ## Deployment
 
 This site is hosted on GitHub Pages and accessible at:
-- **Custom Domain**: https://nextrev.com
+- **Custom Domain**: https://nxtrev.com
 - **GitHub Pages**: https://reedscott1.github.io/nextrev-website
 
 ## Legal Documents Status
@@ -61,7 +61,7 @@ To test locally:
 
 ## DNS Configuration
 
-Custom domain `nextrev.com` is configured via:
+Custom domain `nxtrev.com` is configured via:
 - GitHub Pages custom domain setting
 - GoDaddy DNS records pointing to GitHub Pages
 
@@ -69,9 +69,9 @@ See deployment documentation for DNS setup details.
 
 ## Links
 
-- Live Site: https://nextrev.com
+- Live Site: https://nxtrev.com
 - GitHub Repo: https://github.com/reedscott1/nextrev-website
-- MemberLink Dashboard: https://qa.signthedailybook.com
+- Member Link Dashboard: https://qa.signthedailybook.com
 
 ## Support
 
