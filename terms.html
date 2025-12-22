@@ -30,214 +30,261 @@
     <!-- Terms of Service Content -->
     <section class="content-section legal-document">
         <div class="container">
-            <div class="draft-notice">
-                <h2>⚠️ DRAFT - UNDER LEGAL REVIEW</h2>
-                <p>This document is a placeholder based on the Clover Terms of Service Template. It must be customized and reviewed by legal counsel before publication.</p>
-                <p><strong>Action Required:</strong> Replace all [BRACKETED] placeholders with Next Rev-specific information.</p>
-                <p><strong>Template Source:</strong> <a href="https://docs.clover.com/dev/docs/clover-eulaterms-of-service-template" target="_blank">Clover EULA/Terms of Service Template</a></p>
-            </div>
-
             <h1>Next Rev Terms of Service</h1>
-            <p><em>Last Updated: [DATE]</em></p>
+            <p><em>Last Updated: December 22, 2024</em></p>
 
             <h2>1. Acceptance of Terms</h2>
             <p>By accessing or using any Next Rev product or service, including Member Link, you ("Merchant", "you", or "your") agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you may not use our services.</p>
 
-            <p>Information you provide to Next Rev or your consumers provide is subject to Next Rev's Privacy Policy, which is accessible at <a href="https://nxtrev.com/privacy">https://nxtrev.com/privacy</a>.</p>
+            <p>These Terms incorporate by reference our Privacy Policy, available at <a href="https://nxtrev.com/privacy.html">https://nxtrev.com/privacy.html</a>, which describes how we collect, use, and protect your data.</p>
 
             <h2>2. Services Description</h2>
-            <p>Next Rev provides business software solutions, including:</p>
 
-            <h3>2.1 Member Link</h3>
-            <p>Member Link is a membership management application that integrates with Clover POS systems. The service includes:</p>
+            <h3>2.1 Member Link Overview</h3>
+            <p>Member Link is a membership management solution that integrates with Clover POS systems. The service consists of two components:</p>
+
+            <h4>Member Link Web Dashboard (memberlink.club)</h4>
             <ul>
-                <li>Web-based member management dashboard</li>
-                <li>Android application for barcode scanning on Clover devices</li>
-                <li>Automatic synchronization with Clover customer database</li>
-                <li>Member tracking and status management</li>
-                <li>[Automatic renewal processing - if applicable]</li>
+                <li>Web-based interface for managing member records</li>
+                <li>Create, edit, and delete member profiles</li>
+                <li>Track membership status, expiration dates, and renewal history</li>
+                <li>Synchronize member data with your Clover customer database</li>
+                <li>Create and manage membership packages and pricing</li>
+                <li>View member activity and order history</li>
             </ul>
 
-            <h3>2.2 [Future Products]</h3>
-            <p>[Descriptions of future Next Rev products will be added here]</p>
-
-            <h2>3. Clover Integration</h2>
-            <p><strong>[IMPORTANT CLOVER REQUIREMENT]</strong> As required by Clover App Market Developer Terms:</p>
+            <h4>Member Link Android App (Clover POS)</h4>
             <ul>
-                <li>App fees, payments from the merchant for the use of Member Link, and merchant-customer payment processing must be implemented within either Clover or Fiserv or both</li>
-                <li>Member Link integrates with your Clover account via OAuth authentication</li>
-                <li>You grant Next Rev permission to access your Clover merchant data necessary for Member Link to function</li>
-                <li>You are responsible for maintaining an active Clover merchant account</li>
+                <li>Barcode scanning for quick member lookup at checkout</li>
+                <li>Assign members to Clover orders during transactions</li>
+                <li>Display membership status and expiration information</li>
+                <li>Add membership renewal items to orders</li>
+                <li>Real-time synchronization with Member Link backend</li>
             </ul>
 
-            <h2>4. User Obligations</h2>
-            <p>As a merchant using Next Rev services, you agree to:</p>
+            <h2>3. Data Collection and Consent</h2>
+
+            <div style="background-color: #fff3cd; border: 1px solid #ffc107; padding: 15px; margin: 20px 0; border-radius: 5px;">
+                <h3 style="margin-top: 0;">IMPORTANT: Consent to Data Collection</h3>
+                <p><strong>By using Member Link, you expressly consent to the following data collection practices:</strong></p>
+            </div>
+
+            <h3>3.1 Order Data Collection</h3>
+            <p><strong>Member Link collects and stores ALL order data from your Clover merchant account.</strong> This is required for the service to function properly. Order data collection includes:</p>
+            <ul>
+                <li>All order transactions, regardless of whether they involve members</li>
+                <li>Order details including timestamps, totals, and status</li>
+                <li>All line items, quantities, and prices</li>
+                <li>Customer assignments on orders</li>
+                <li>Payment information associated with orders</li>
+            </ul>
+            <p>Our system regularly polls your Clover account to retrieve order data. This data is used to detect membership renewals, track member activity, and provide reporting features.</p>
+
+            <h3>3.2 Customer Data Collection</h3>
+            <p>Member Link accesses and synchronizes customer data between your Clover account and our database. This includes reading existing customers, creating new customer records, and updating customer information.</p>
+
+            <h3>3.3 Inventory Data Collection</h3>
+            <p>Member Link accesses your Clover inventory to retrieve membership package details and may create inventory items for membership packages you define.</p>
+
+            <h3>3.4 Merchant Data Collection</h3>
+            <p>Member Link collects your merchant name and identification for personalization and security validation purposes.</p>
+
+            <p><strong>You must agree to this data collection to be onboarded into Member Link. If you do not consent to this data collection, you may not use Member Link.</strong></p>
+
+            <h2>4. Clover Integration Requirements</h2>
+
+            <h3>4.1 Clover Account</h3>
+            <p>Member Link requires an active Clover merchant account. You must:</p>
+            <ul>
+                <li>Maintain an active Clover merchant account in good standing</li>
+                <li>Authorize Member Link to access your Clover account via OAuth</li>
+                <li>Grant the following Clover API permissions:
+                    <ul>
+                        <li><strong>Customer READ/WRITE:</strong> To sync member data with Clover customers</li>
+                        <li><strong>Orders READ/WRITE:</strong> To read order data and assign customers to orders</li>
+                        <li><strong>Inventory READ/WRITE:</strong> To access and create membership packages</li>
+                        <li><strong>Merchant READ:</strong> To retrieve merchant information for security validation</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>4.2 Clover App Market Terms</h3>
+            <p>Your use of Member Link is also subject to the Clover App Market Developer Terms. As required by Clover:</p>
+            <ul>
+                <li>App fees and payments must be processed through Clover or Fiserv</li>
+                <li>Merchant-customer payment processing must use Clover or Fiserv systems</li>
+            </ul>
+
+            <h2>5. Your Obligations</h2>
+
+            <h3>5.1 General Obligations</h3>
+            <p>As a merchant using Member Link, you agree to:</p>
             <ul>
                 <li>Provide accurate and complete information when setting up your account</li>
-                <li>Maintain the security of your account credentials</li>
-                <li>Use the service only for lawful purposes</li>
+                <li>Maintain the security and confidentiality of your account credentials</li>
+                <li>Use the service only for lawful business purposes</li>
                 <li>Comply with all applicable laws and regulations</li>
-                <li>Not misuse or abuse the service</li>
-                <li>Ensure you have necessary rights to data you upload (member information)</li>
+                <li>Not misuse, abuse, or attempt to circumvent the service</li>
+                <li>Notify us immediately of any unauthorized access to your account</li>
             </ul>
 
-            <h3>4.1 Member Link-Specific Obligations</h3>
-            <p>When using Member Link, you additionally agree to:</p>
+            <h3>5.2 Member Data Obligations</h3>
+            <p>You are responsible for the member data you collect and store in Member Link:</p>
             <ul>
-                <li>Obtain necessary consent from members before collecting their personal data</li>
-                <li>Comply with privacy laws regarding member data (GDPR, CCPA, etc.)</li>
-                <li>Ensure member data is accurate and up-to-date</li>
-                <li>Not use member data for purposes unrelated to membership management</li>
+                <li>Obtain all necessary consents from members before collecting their personal information</li>
+                <li>Comply with all applicable privacy laws (including GDPR, CCPA, and other data protection regulations)</li>
+                <li>Ensure member data is accurate and kept up-to-date</li>
+                <li>Use member data only for legitimate membership management purposes</li>
+                <li>Have appropriate legal basis for processing member data</li>
+                <li>Respond to member requests regarding their personal data</li>
             </ul>
 
-            <h2>5. Payment Terms</h2>
-            <p><strong>[TO BE CUSTOMIZED based on pricing model]</strong></p>
+            <h3>5.3 Prohibited Uses</h3>
+            <p>You may not use Member Link to:</p>
             <ul>
-                <li><strong>Pricing:</strong> [Free tier / Subscription fee / Usage-based pricing]</li>
-                <li><strong>Billing:</strong> [Monthly / Annual / One-time]</li>
-                <li><strong>Payment Method:</strong> [Through Clover billing system]</li>
-                <li><strong>Refunds:</strong> [Refund policy to be determined]</li>
-                <li><strong>Trial Period:</strong> [If applicable]</li>
+                <li>Collect or store data in violation of privacy laws</li>
+                <li>Engage in fraudulent or deceptive practices</li>
+                <li>Transmit malware, viruses, or harmful code</li>
+                <li>Attempt to gain unauthorized access to our systems</li>
+                <li>Interfere with the operation of the service</li>
+                <li>Use automated systems to access the service without authorization</li>
             </ul>
 
             <h2>6. Intellectual Property</h2>
-            <p>Next Rev retains all rights, title, and interest in and to the services, including:</p>
+
+            <h3>6.1 Next Rev Property</h3>
+            <p>Next Rev retains all rights, title, and interest in and to Member Link, including:</p>
             <ul>
-                <li>Software code and architecture</li>
-                <li>User interfaces and designs</li>
+                <li>Software code, architecture, and algorithms</li>
+                <li>User interfaces, designs, and visual elements</li>
                 <li>Trademarks, logos, and branding (Next Rev, Member Link)</li>
-                <li>Documentation and support materials</li>
+                <li>Documentation, support materials, and training content</li>
             </ul>
 
-            <p>You retain ownership of your merchant data and member information. By using our services, you grant Next Rev a license to process and store this data solely for providing the services.</p>
-
-            <h2>7. Data and Privacy</h2>
-            <p>Our collection, use, and disclosure of your data is described in our Privacy Policy at <a href="https://nxtrev.com/privacy">https://nxtrev.com/privacy</a>.</p>
-
-            <p><strong>Data Ownership:</strong> You own all merchant and member data. Next Rev acts as a data processor.</p>
-
-            <p><strong>Data Portability:</strong> You may export your data at any time through the service interface.</p>
-
-            <p><strong>Data Deletion:</strong> Upon termination, we will delete your data according to our retention policies as described in the Privacy Policy.</p>
-
-            <h2>8. Service Availability</h2>
-            <p><strong>[TO BE CUSTOMIZED]</strong></p>
+            <h3>6.2 Your Data</h3>
+            <p>You retain ownership of your merchant data and member information. By using Member Link, you grant Next Rev a limited license to:</p>
             <ul>
-                <li><strong>Uptime:</strong> We strive to maintain [XX]% uptime, but do not guarantee uninterrupted service</li>
-                <li><strong>Maintenance:</strong> We may perform scheduled maintenance with [notice period]</li>
-                <li><strong>Support:</strong> Support is available via <a href="mailto:support@nxtrev.com">support@nxtrev.com</a></li>
+                <li>Store, process, and transmit your data to provide the services</li>
+                <li>Create backups for disaster recovery purposes</li>
+                <li>Generate anonymized, aggregated statistics (which cannot identify individual merchants or members)</li>
             </ul>
+
+            <h2>7. Service Availability</h2>
+
+            <h3>7.1 Availability</h3>
+            <p>We strive to maintain high availability of Member Link services. However, we do not guarantee uninterrupted access and may experience:</p>
+            <ul>
+                <li>Scheduled maintenance windows (we will provide advance notice when possible)</li>
+                <li>Unplanned outages due to technical issues</li>
+                <li>Service interruptions caused by third-party services (Clover, Google Cloud)</li>
+            </ul>
+
+            <h3>7.2 Support</h3>
+            <p>Support is available via email at <a href="mailto:support@nxtrev.com">support@nxtrev.com</a>. We will respond to support requests within a reasonable timeframe.</p>
+
+            <h2>8. Payment Terms</h2>
+            <p>Member Link pricing and billing terms are provided separately at the time of signup. Any applicable fees will be processed through the Clover billing system in accordance with Clover App Market requirements.</p>
 
             <h2>9. Limitation of Liability</h2>
-            <p><strong>[TO BE CUSTOMIZED WITH LEGAL COUNSEL]</strong></p>
+
+            <h3>9.1 Disclaimer of Warranties</h3>
+            <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, MEMBER LINK IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+
+            <h3>9.2 Limitation of Damages</h3>
             <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW:</p>
             <ul>
-                <li>Next Rev provides the services "AS IS" without warranties of any kind</li>
-                <li>Next Rev shall not be liable for indirect, incidental, special, or consequential damages</li>
-                <li>Next Rev's total liability shall not exceed [amount paid in past 12 months / specific dollar amount]</li>
+                <li>NEXT REV SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, BUSINESS OPPORTUNITIES, OR GOODWILL.</li>
+                <li>NEXT REV'S TOTAL LIABILITY FOR ALL CLAIMS ARISING FROM OR RELATED TO THESE TERMS OR THE SERVICES SHALL NOT EXCEED THE AMOUNTS PAID BY YOU TO NEXT REV IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM.</li>
             </ul>
 
+            <h3>9.3 Exceptions</h3>
+            <p>These limitations do not apply to liability that cannot be excluded or limited under applicable law.</p>
+
             <h2>10. Indemnification</h2>
-            <p><strong>[TO BE CUSTOMIZED WITH LEGAL COUNSEL]</strong></p>
-            <p>You agree to indemnify and hold harmless Next Rev from claims arising from:</p>
+            <p>You agree to indemnify, defend, and hold harmless Next Rev and its officers, directors, employees, and agents from and against any claims, damages, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising from:</p>
             <ul>
-                <li>Your use of the services</li>
+                <li>Your use of Member Link</li>
                 <li>Your violation of these Terms</li>
                 <li>Your violation of any law or regulation</li>
-                <li>Your member data or how you collect/use it</li>
+                <li>Your collection, use, or handling of member data</li>
+                <li>Any claim by a third party (including your members) related to your use of the service</li>
             </ul>
 
             <h2>11. Termination</h2>
 
-            <h3>11.1 By You</h3>
-            <p>You may terminate your account at any time by [process to be determined].</p>
+            <h3>11.1 Termination by You</h3>
+            <p>You may terminate your Member Link account at any time by:</p>
+            <ul>
+                <li>Contacting us at <a href="mailto:support@nxtrev.com">support@nxtrev.com</a> to request account closure</li>
+                <li>Disconnecting Member Link from your Clover account</li>
+            </ul>
 
-            <h3>11.2 By Next Rev</h3>
-            <p>We may suspend or terminate your access if:</p>
+            <h3>11.2 Termination by Next Rev</h3>
+            <p>We may suspend or terminate your access to Member Link if:</p>
             <ul>
                 <li>You violate these Terms</li>
-                <li>Your account is inactive for [time period]</li>
-                <li>You fail to pay fees (if applicable)</li>
-                <li>We discontinue the service (with [notice period])</li>
+                <li>You fail to pay applicable fees</li>
+                <li>Your Clover merchant account is terminated or suspended</li>
+                <li>We are required to do so by law</li>
+                <li>We discontinue the service (with 30 days advance notice)</li>
             </ul>
 
             <h3>11.3 Effect of Termination</h3>
             <p>Upon termination:</p>
             <ul>
-                <li>Your access to the service will cease</li>
-                <li>Data will be deleted according to our retention policy</li>
-                <li>You may request data export before termination</li>
-                <li>[Refund policy if applicable]</li>
+                <li>Your access to Member Link will cease immediately</li>
+                <li>We will retain your data for 90 days to allow for data export requests</li>
+                <li>After 90 days, your data will be permanently deleted (unless retention is required by law)</li>
+                <li>Customer records synchronized to Clover will remain in your Clover account</li>
             </ul>
+
+            <h3>11.4 Data Export</h3>
+            <p>You may request an export of your member data before or within 90 days after termination by contacting <a href="mailto:support@nxtrev.com">support@nxtrev.com</a>.</p>
 
             <h2>12. Changes to Terms</h2>
             <p>We may modify these Terms at any time. We will notify you of material changes by:</p>
             <ul>
-                <li>Posting updated Terms on this page with new "Last Updated" date</li>
-                <li>Sending email notification to your account email [if material changes]</li>
+                <li>Posting updated Terms on this page with a new "Last Updated" date</li>
+                <li>Sending email notification to your account email for material changes</li>
+                <li>Displaying a notice in the Member Link dashboard</li>
             </ul>
-            <p>Continued use of the service after changes constitutes acceptance of the new Terms.</p>
+            <p>Your continued use of Member Link after changes constitutes acceptance of the modified Terms. If you do not agree to the changes, you must stop using the service.</p>
 
-            <h2>13. Governing Law</h2>
-            <p><strong>[TO BE CUSTOMIZED]</strong></p>
-            <p>These Terms shall be governed by the laws of [State/Country], without regard to conflict of law provisions.</p>
+            <h2>13. Governing Law and Disputes</h2>
 
-            <h2>14. Dispute Resolution</h2>
-            <p><strong>[TO BE CUSTOMIZED WITH LEGAL COUNSEL]</strong></p>
+            <h3>13.1 Governing Law</h3>
+            <p>These Terms shall be governed by and construed in accordance with the laws of the State of Delaware, United States, without regard to its conflict of law provisions.</p>
+
+            <h3>13.2 Dispute Resolution</h3>
+            <p>Any dispute arising from or relating to these Terms or the services shall be resolved as follows:</p>
             <ul>
-                <li><strong>Arbitration:</strong> [If requiring arbitration]</li>
-                <li><strong>Jurisdiction:</strong> [Specific courts/location]</li>
-                <li><strong>Class Action Waiver:</strong> [If applicable]</li>
+                <li><strong>Informal Resolution:</strong> You agree to first attempt to resolve any dispute informally by contacting us at <a href="mailto:legal@nxtrev.com">legal@nxtrev.com</a>.</li>
+                <li><strong>Jurisdiction:</strong> If informal resolution fails, any legal action shall be brought exclusively in the state or federal courts located in Delaware.</li>
             </ul>
 
-            <h2>15. Miscellaneous</h2>
-            <p><strong>Entire Agreement:</strong> These Terms constitute the entire agreement between you and Next Rev regarding the services.</p>
+            <h3>13.3 Class Action Waiver</h3>
+            <p>YOU AGREE THAT ANY DISPUTE RESOLUTION PROCEEDINGS WILL BE CONDUCTED ONLY ON AN INDIVIDUAL BASIS AND NOT IN A CLASS, CONSOLIDATED, OR REPRESENTATIVE ACTION.</p>
 
-            <p><strong>Severability:</strong> If any provision is found unenforceable, the remaining provisions remain in effect.</p>
+            <h2>14. General Provisions</h2>
 
-            <p><strong>No Waiver:</strong> Failure to enforce any provision does not constitute a waiver.</p>
+            <p><strong>Entire Agreement:</strong> These Terms, together with the Privacy Policy, constitute the entire agreement between you and Next Rev regarding Member Link.</p>
 
-            <p><strong>Assignment:</strong> You may not assign these Terms without our consent. We may assign to any successor or affiliate.</p>
+            <p><strong>Severability:</strong> If any provision of these Terms is found to be unenforceable, the remaining provisions will remain in full force and effect.</p>
 
-            <h2>16. Contact</h2>
+            <p><strong>No Waiver:</strong> Our failure to enforce any provision of these Terms does not constitute a waiver of that provision or any other provision.</p>
+
+            <p><strong>Assignment:</strong> You may not assign or transfer these Terms without our prior written consent. We may assign these Terms to any successor or affiliate without restriction.</p>
+
+            <p><strong>Notices:</strong> We may send notices to the email address associated with your account. You may send notices to <a href="mailto:legal@nxtrev.com">legal@nxtrev.com</a>.</p>
+
+            <h2>15. Contact Information</h2>
             <p>For questions about these Terms, contact us:</p>
             <p>
-                <strong>Next Rev</strong><br>
-                Email: <a href="mailto:legal@nxtrev.com">[legal@nxtrev.com or appropriate contact]</a><br>
-                [Physical address if required]
+                <strong>Next Rev Distribution, Inc.</strong><br>
+                Email: <a href="mailto:legal@nxtrev.com">legal@nxtrev.com</a><br>
+                Support: <a href="mailto:support@nxtrev.com">support@nxtrev.com</a><br>
+                Website: <a href="https://nxtrev.com">https://nxtrev.com</a>
             </p>
-
-            <div class="draft-notice">
-                <h3>Customization Checklist:</h3>
-                <ul>
-                    <li>[ ] Replace [DATE] with publication date</li>
-                    <li>[ ] Customize all [TO BE CUSTOMIZED] sections</li>
-                    <li>[ ] Determine pricing and payment terms (Section 5)</li>
-                    <li>[ ] Set service availability commitments (Section 8)</li>
-                    <li>[ ] Have legal counsel review liability limitations (Section 9)</li>
-                    <li>[ ] Have legal counsel review indemnification (Section 10)</li>
-                    <li>[ ] Define termination process and notice periods (Section 11)</li>
-                    <li>[ ] Determine governing law and jurisdiction (Section 13)</li>
-                    <li>[ ] Decide on dispute resolution approach (Section 14)</li>
-                    <li>[ ] Add physical address if required</li>
-                    <li>[ ] Set up legal@nxtrev.com email or appropriate contact</li>
-                    <li>[ ] Ensure compliance with Clover App Market Developer Terms</li>
-                    <li>[ ] Have legal counsel review entire document</li>
-                    <li>[ ] Remove all draft notices and brackets before publishing</li>
-                </ul>
-                <p><strong>Important Clover Requirements to Address:</strong></p>
-                <ul>
-                    <li>✓ Payment processing must be through Clover/Fiserv (Section 3)</li>
-                    <li>✓ Privacy Policy must be referenced (Section 1 and 7)</li>
-                    <li>✓ Data handling must be clearly described</li>
-                </ul>
-                <p><strong>Resources:</strong></p>
-                <ul>
-                    <li><a href="https://docs.clover.com/dev/docs/clover-eulaterms-of-service-template" target="_blank">Clover EULA/Terms of Service Template</a></li>
-                    <li><a href="https://www.clover.com/legal-guidelines" target="_blank">Clover Legal Guidelines</a></li>
-                    <li><a href="https://www.clover.com/terms.raw.html" target="_blank">Clover App Market Terms</a></li>
-                </ul>
-            </div>
         </div>
     </section>
 

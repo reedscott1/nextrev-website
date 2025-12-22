@@ -30,139 +30,191 @@
     <!-- Privacy Policy Content -->
     <section class="content-section legal-document">
         <div class="container">
-            <div class="draft-notice">
-                <h2>⚠️ DRAFT - UNDER LEGAL REVIEW</h2>
-                <p>This document is a placeholder based on the Clover Privacy Policy Template. It must be customized and reviewed by legal counsel before publication.</p>
-                <p><strong>Action Required:</strong> Replace all [BRACKETED] placeholders with Next Rev-specific information.</p>
-                <p><strong>Template Source:</strong> <a href="https://docs.clover.com/dev/docs/clover-privacy-policy-template" target="_blank">Clover Privacy Policy Template</a></p>
-            </div>
-
             <h1>Next Rev Privacy Policy</h1>
-            <p><em>Last Updated: [DATE]</em></p>
+            <p><em>Last Updated: December 22, 2024</em></p>
 
-            <h2>Introduction</h2>
-            <p>This Privacy Policy describes how Next Rev ("[LEGAL COMPANY NAME]", "we", "our", or "us") collects, uses, discloses, and otherwise processes personal data in connection with our products and services, including Member Link.</p>
+            <h2>1. Introduction</h2>
+            <p>This Privacy Policy describes how Next Rev Distribution, Inc. ("Next Rev", "we", "our", or "us") collects, uses, discloses, and otherwise processes personal data in connection with our products and services.</p>
 
             <p>This Privacy Policy applies to all Next Rev products and services, including:</p>
             <ul>
-                <li><strong>Member Link</strong> - Membership management application for Clover POS systems</li>
-                <li>[Future products will be listed here]</li>
+                <li><strong>Member Link Web Dashboard</strong> (memberlink.club) - Web-based membership management application for merchants</li>
+                <li><strong>Member Link Android App</strong> - Clover POS application for barcode scanning and member assignment</li>
             </ul>
 
-            <h2>Information We Collect</h2>
+            <p>By using any Next Rev product or service, you acknowledge that you have read and understood this Privacy Policy.</p>
 
-            <h3>Information Common to All Products</h3>
-            <p><strong>[TO BE CUSTOMIZED]</strong> We collect the following types of information:</p>
+            <h2>2. Information We Collect</h2>
+
+            <h3>2.1 Merchant Account Information</h3>
+            <p>When you connect Member Link to your Clover merchant account, we collect:</p>
             <ul>
-                <li><strong>Account Information:</strong> [Name, email, company name, etc.]</li>
-                <li><strong>Usage Information:</strong> [How you use our services]</li>
-                <li><strong>Device Information:</strong> [Device type, operating system, etc.]</li>
-                <li><strong>Payment Information:</strong> [If applicable - processed through Clover/Fiserv]</li>
+                <li><strong>Clover OAuth Credentials:</strong> Access tokens and refresh tokens that allow Member Link to communicate with your Clover account</li>
+                <li><strong>Merchant Identification:</strong> Your Clover merchant UUID and merchant name</li>
+                <li><strong>Authentication Data:</strong> Information used to verify your identity when accessing Member Link services</li>
             </ul>
 
-            <h3>Member Link-Specific Information</h3>
-            <p><strong>[TO BE CUSTOMIZED]</strong> When you use Member Link, we also collect:</p>
+            <h3>2.2 Member Data</h3>
+            <p>When you use Member Link to manage memberships, we collect and store member information including:</p>
             <ul>
-                <li><strong>Member Data:</strong> Member names, contact information (email, phone, address), membership status, dates (join, renewal, expiration), member types, and license information</li>
-                <li><strong>Clover Integration Data:</strong> OAuth access tokens, merchant UUID, Clover customer IDs</li>
-                <li><strong>Transaction Data:</strong> Order information when members make qualifying purchases</li>
+                <li><strong>Personal Identifiers:</strong> Member numbers, first name, last name</li>
+                <li><strong>Contact Information:</strong> Email address, phone number, mailing address (street, city, state, ZIP code)</li>
+                <li><strong>Membership Details:</strong> Join date, renewal date, expiration date, membership type, membership status</li>
+                <li><strong>Additional Information:</strong> Date of birth, license information (if applicable)</li>
+                <li><strong>Clover Integration Data:</strong> Clover customer IDs that link members to your Clover customer records</li>
             </ul>
 
-            <h2>How We Use Your Information</h2>
-
-            <h3>General Uses</h3>
-            <p><strong>[TO BE CUSTOMIZED]</strong> We use the information we collect to:</p>
+            <h3>2.3 Order and Transaction Data</h3>
+            <p><strong>IMPORTANT:</strong> To provide Member Link's membership tracking and renewal features, we collect and store <strong>all order data</strong> from your Clover merchant account. This includes:</p>
             <ul>
-                <li>Provide and maintain our services</li>
-                <li>Process transactions and send related information</li>
+                <li><strong>Order Details:</strong> Order IDs, timestamps, order status, and order totals</li>
+                <li><strong>Line Items:</strong> Items purchased, quantities, and prices</li>
+                <li><strong>Customer Assignments:</strong> Which customers are associated with each order</li>
+                <li><strong>Membership-Related Purchases:</strong> Renewal items, membership packages, and related transactions</li>
+            </ul>
+            <p>This order data collection is required for Member Link to function properly. Our system polls your Clover orders regularly to detect membership renewals and track member activity.</p>
+
+            <h3>2.4 Inventory Data</h3>
+            <p>We access your Clover inventory to:</p>
+            <ul>
+                <li>Retrieve membership package and renewal item details (names, prices)</li>
+                <li>Create and sync membership packages you define in the Member Link dashboard</li>
+            </ul>
+
+            <h3>2.5 Technical and Usage Data</h3>
+            <p>We automatically collect:</p>
+            <ul>
+                <li><strong>Device Information:</strong> Device type, operating system, and app version (for the Android app)</li>
+                <li><strong>Usage Data:</strong> Features accessed, actions taken, and timestamps</li>
+                <li><strong>Log Data:</strong> Error logs, performance data, and diagnostic information</li>
+            </ul>
+
+            <h2>3. How We Use Your Information</h2>
+
+            <h3>3.1 Providing Member Link Services</h3>
+            <p>We use your information to:</p>
+            <ul>
+                <li>Synchronize member data between Member Link and your Clover POS system</li>
+                <li>Enable barcode scanning and member lookup on Clover devices</li>
+                <li>Track membership status, expiration dates, and renewal history</li>
+                <li>Process automatic membership renewals when renewal items are purchased</li>
+                <li>Assign customers to orders when members check in via barcode</li>
+                <li>Display membership and order information in the Member Link dashboard</li>
+            </ul>
+
+            <h3>3.2 Order Data Processing</h3>
+            <p>We use your order data to:</p>
+            <ul>
+                <li>Detect when membership renewal items are purchased</li>
+                <li>Automatically extend member expiration dates based on purchases</li>
+                <li>Track member purchase activity and history</li>
+                <li>Provide reporting and analytics on membership activity</li>
+            </ul>
+
+            <h3>3.3 Service Operations</h3>
+            <p>We also use your information to:</p>
+            <ul>
+                <li>Maintain, improve, and optimize our services</li>
                 <li>Respond to your requests and provide customer support</li>
-                <li>Send you technical notices, updates, and administrative messages</li>
-                <li>Monitor and analyze trends and usage</li>
+                <li>Send technical notices, updates, and security alerts</li>
                 <li>Detect, prevent, and address technical issues and security threats</li>
                 <li>Comply with legal obligations</li>
             </ul>
 
-            <h3>Member Link-Specific Uses</h3>
-            <p><strong>[TO BE CUSTOMIZED]</strong> For Member Link specifically, we use your information to:</p>
+            <h2>4. How We Share Your Information</h2>
+
+            <h3>4.1 Clover Integration</h3>
+            <p>Member Link integrates with Clover POS systems. Data flows between Member Link and Clover include:</p>
             <ul>
-                <li>Synchronize member data between Member Link and your Clover POS system</li>
-                <li>Enable barcode scanning and member lookup on Clover devices</li>
-                <li>Track membership status and expiration dates</li>
-                <li>Process automatic membership renewals [if applicable]</li>
+                <li><strong>To Clover:</strong> Customer records created or updated in Member Link are synchronized to your Clover customer database</li>
+                <li><strong>From Clover:</strong> Customer data, order data, inventory data, and merchant information are retrieved from your Clover account</li>
             </ul>
 
-            <h2>How We Share Your Information</h2>
-            <p><strong>[TO BE CUSTOMIZED]</strong> We may share your information in the following circumstances:</p>
+            <h3>4.2 Service Providers</h3>
+            <p>We use third-party service providers to help operate our services:</p>
             <ul>
-                <li><strong>With Clover:</strong> Member Link integrates with Clover POS systems and shares data through the Clover API</li>
-                <li><strong>With Service Providers:</strong> [Google Cloud Platform for data storage, etc.]</li>
-                <li><strong>For Legal Reasons:</strong> When required by law or to protect our rights</li>
-                <li><strong>With Your Consent:</strong> When you direct us to share information</li>
+                <li><strong>Google Cloud Platform:</strong> Cloud hosting, data storage, and computing services (data stored in US regions)</li>
+                <li><strong>PostgreSQL Database:</strong> Secure storage of member and merchant data</li>
             </ul>
 
-            <h2>Data Storage and Security</h2>
-            <p><strong>[TO BE CUSTOMIZED]</strong></p>
+            <h3>4.3 Legal Requirements</h3>
+            <p>We may disclose your information when required by law, such as:</p>
             <ul>
-                <li><strong>Where We Store Data:</strong> [Google Cloud Platform, specific regions]</li>
-                <li><strong>How Long We Keep Data:</strong> [Retention policies]</li>
-                <li><strong>Security Measures:</strong> [Encryption, access controls, etc.]</li>
+                <li>To comply with legal process, court orders, or government requests</li>
+                <li>To protect the rights, property, or safety of Next Rev, our users, or the public</li>
+                <li>To enforce our Terms of Service</li>
             </ul>
 
-            <h2>Your Rights and Choices</h2>
-            <p><strong>[TO BE CUSTOMIZED]</strong> Depending on your location, you may have the following rights:</p>
+            <h3>4.4 Business Transfers</h3>
+            <p>If Next Rev is involved in a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction.</p>
+
+            <h2>5. Data Storage and Security</h2>
+
+            <h3>5.1 Where We Store Data</h3>
+            <p>Your data is stored on Google Cloud Platform servers located in the United States (us-east1 region).</p>
+
+            <h3>5.2 How Long We Keep Data</h3>
             <ul>
-                <li><strong>Access:</strong> Request access to your personal data</li>
-                <li><strong>Correction:</strong> Request correction of inaccurate data</li>
-                <li><strong>Deletion:</strong> Request deletion of your data</li>
+                <li><strong>Active Accounts:</strong> We retain your data for as long as your Member Link account is active</li>
+                <li><strong>After Termination:</strong> Upon account termination, we will delete your data within 90 days, unless retention is required by law</li>
+                <li><strong>Backup Retention:</strong> Backup copies may be retained for up to 30 additional days for disaster recovery purposes</li>
+            </ul>
+
+            <h3>5.3 Security Measures</h3>
+            <p>We implement appropriate technical and organizational measures to protect your data:</p>
+            <ul>
+                <li>Encryption of data in transit (HTTPS/TLS)</li>
+                <li>Secure OAuth token storage and handling</li>
+                <li>JWT-based authentication with automatic expiration</li>
+                <li>Role-based access controls</li>
+                <li>Regular security monitoring and updates</li>
+            </ul>
+
+            <h2>6. Your Rights and Choices</h2>
+            <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+            <ul>
+                <li><strong>Access:</strong> Request access to the personal data we hold about you</li>
+                <li><strong>Correction:</strong> Request correction of inaccurate or incomplete data</li>
+                <li><strong>Deletion:</strong> Request deletion of your personal data</li>
                 <li><strong>Portability:</strong> Request a copy of your data in a portable format</li>
-                <li><strong>Object:</strong> Object to certain processing of your data</li>
+                <li><strong>Objection:</strong> Object to certain processing of your data</li>
             </ul>
 
-            <p>To exercise these rights, contact us at <a href="mailto:privacy@nxtrev.com">[privacy@nxtrev.com or appropriate contact]</a>.</p>
+            <p>To exercise these rights, contact us at <a href="mailto:privacy@nxtrev.com">privacy@nxtrev.com</a>.</p>
 
-            <h2>Compliance with Privacy Laws</h2>
+            <h3>6.1 Data Export</h3>
+            <p>You may export your member data at any time through the Member Link dashboard.</p>
 
-            <h3>GDPR (Europe)</h3>
-            <p><strong>[TO BE CUSTOMIZED IF OPERATING IN EUROPE]</strong></p>
+            <h3>6.2 Account Deletion</h3>
+            <p>You may request deletion of your Member Link account and associated data by contacting us. Note that this will permanently remove all member data stored in Member Link (your Clover customer data will remain in Clover).</p>
 
-            <h3>CCPA (California)</h3>
-            <p><strong>[TO BE CUSTOMIZED IF SERVING CALIFORNIA RESIDENTS]</strong></p>
+            <h2>7. California Privacy Rights (CCPA)</h2>
+            <p>If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA):</p>
+            <ul>
+                <li>Right to know what personal information we collect, use, and disclose</li>
+                <li>Right to request deletion of your personal information</li>
+                <li>Right to opt-out of the sale of personal information (Note: We do not sell personal information)</li>
+                <li>Right to non-discrimination for exercising your privacy rights</li>
+            </ul>
 
-            <h2>Children's Privacy</h2>
-            <p>Our services are not directed to children under 13 (or 16 in Europe). We do not knowingly collect personal information from children.</p>
+            <h2>8. Children's Privacy</h2>
+            <p>Member Link is designed for business use and is not directed to children under 13 years of age. We do not knowingly collect personal information from children under 13. If you believe we have collected information from a child under 13, please contact us immediately.</p>
 
-            <h2>Changes to This Privacy Policy</h2>
-            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
+            <h2>9. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by:</p>
+            <ul>
+                <li>Posting the updated Privacy Policy on this page with a new "Last Updated" date</li>
+                <li>Sending an email notification to the address associated with your account (for material changes)</li>
+            </ul>
+            <p>Your continued use of Member Link after changes constitutes acceptance of the updated Privacy Policy.</p>
 
-            <h2>Contact Us</h2>
-            <p>If you have questions about this Privacy Policy, please contact us:</p>
+            <h2>10. Contact Us</h2>
+            <p>If you have questions about this Privacy Policy or our data practices, please contact us:</p>
             <p>
-                <strong>Next Rev</strong><br>
-                Email: <a href="mailto:privacy@nxtrev.com">[privacy@nxtrev.com or appropriate contact]</a><br>
-                [Physical address if required]
+                <strong>Next Rev Distribution, Inc.</strong><br>
+                Email: <a href="mailto:privacy@nxtrev.com">privacy@nxtrev.com</a><br>
+                Website: <a href="https://nxtrev.com">https://nxtrev.com</a>
             </p>
-
-            <div class="draft-notice">
-                <h3>Customization Checklist:</h3>
-                <ul>
-                    <li>[ ] Replace [LEGAL COMPANY NAME] with official legal entity name</li>
-                    <li>[ ] Fill in [DATE] with publication date</li>
-                    <li>[ ] Customize all [TO BE CUSTOMIZED] sections with specific Next Rev practices</li>
-                    <li>[ ] Add physical address if required by law</li>
-                    <li>[ ] Set up privacy@nxtrev.com email or appropriate contact</li>
-                    <li>[ ] Review data collection specifics with technical team</li>
-                    <li>[ ] Determine data retention policies</li>
-                    <li>[ ] Add GDPR section if operating in Europe</li>
-                    <li>[ ] Add CCPA section if serving California residents</li>
-                    <li>[ ] Have legal counsel review final document</li>
-                    <li>[ ] Remove all draft notices and brackets before publishing</li>
-                </ul>
-                <p><strong>Resources:</strong></p>
-                <ul>
-                    <li><a href="https://docs.clover.com/dev/docs/clover-privacy-policy-template" target="_blank">Clover Privacy Policy Template</a></li>
-                    <li><a href="https://www.clover.com/legal-guidelines" target="_blank">Clover Legal Guidelines</a></li>
-                </ul>
-            </div>
         </div>
     </section>
 
