@@ -239,6 +239,41 @@ body {
     margin-bottom: 1.5rem;
 }
 
+/* Team Section */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-member {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.team-member h2 {
+    font-size: 1.6rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.team-role {
+    font-size: 1.1rem;
+    color: #ff6600;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.team-member p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
 /* Content Section */
 .content-section {
     padding: 4rem 0;
