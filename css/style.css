@@ -11,6 +11,9 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Container */
@@ -278,7 +281,7 @@ body {
 .content-section {
     padding: 4rem 0;
     background-color: white;
-    min-height: 60vh;
+    flex: 1;
 }
 
 .content-section h1 {
