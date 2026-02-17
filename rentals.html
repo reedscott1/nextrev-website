@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextRev Rentals — Commercial Van Rentals</title>
+    <meta name="description" content="NextRev Rentals provides reliable commercial cargo van rentals in Harrisburg, PA. Daily, weekly, and longer-term rentals for contractors and businesses.">
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
     <link rel="alternate icon" type="image/png" href="img/favicon.png">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NextRev Rentals - Commercial Van Rentals</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar scrolled">
         <div class="container">
             <div class="nav-brand">
                 <a href="index.html">
                     <img src="img/nextrev-logo.jpg" alt="NextRev" class="logo">
                 </a>
             </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
@@ -31,21 +38,27 @@
                 <li><a href="team.html">Our Team</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="nav-overlay"></div>
         </div>
     </nav>
 
-    <!-- NextRev Rentals Section -->
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>NextRev Rentals</h1>
+            <p class="page-subtitle">Commercial Van Rentals in Harrisburg, PA</p>
+        </div>
+    </section>
+
+    <!-- Content -->
     <section class="content-section">
         <div class="container">
             <div class="product-detail">
-                <h1>NextRev Rentals</h1>
-                <p class="product-tagline">Commercial Van Rentals in Harrisburg, PA</p>
-
                 <p>NextRev Rentals provides reliable cargo van rentals for contractors, delivery services, and businesses with temporary transportation needs. We offer daily, weekly, and longer-term rentals to fit your business schedule.</p>
 
                 <p>Whether you need to transport equipment, expand your fleet temporarily, or handle extra cargo requirements, our well-maintained vehicles are ready when you need them.</p>
 
-                <a href="https://nextrevrentals.com" class="btn btn-primary" target="_blank" rel="noopener">Visit NextRev Rentals</a>
+                <a href="https://nextrevrentals.com" class="btn btn-primary" target="_blank" rel="noopener">Visit NextRev Rentals <span class="arrow">&rarr;</span></a>
             </div>
         </div>
     </section>
@@ -53,13 +66,44 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Next Rev Distribution, Inc. All rights reserved.</p>
-            <p>
-                <a href="privacy.html">Privacy Policy</a> |
-                <a href="terms.html">Terms of Service</a> |
-                <a href="contact.html">Contact</a>
-            </p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="img/nextrev-logo.jpg" alt="Next Rev" class="footer-logo">
+                    <p>Technology solutions engineered for business growth. Serving clients since 2005.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="memberlink.html">Member Link</a></li>
+                        <li><a href="rentals.html">NextRev Rentals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get in Touch</h4>
+                    <ul>
+                        <li><a href="mailto:support@nxtrev.com">support@nxtrev.com</a></li>
+                        <li><a href="mailto:rentals@nxtrev.com">rentals@nxtrev.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Next Rev Distribution, Inc. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

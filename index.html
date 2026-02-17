@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Next Rev - Business Solutions</title>
+    <title>Next Rev — Custom Software Integrations</title>
+    <meta name="description" content="Next Rev Distribution builds precision software solutions that connect business systems, automate workflows, and drive growth. Specializing in custom integrations and POS solutions.">
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
@@ -20,6 +21,11 @@
                     <img src="img/nextrev-logo.jpg" alt="Next Rev" class="logo">
                 </a>
             </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-menu">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li class="dropdown">
@@ -32,34 +38,81 @@
                 <li><a href="team.html">Our Team</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="nav-overlay"></div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <img src="img/nextrev-logo.jpg" alt="Next Rev" class="hero-logo">
-            <p class="subtitle">Innovative Business Solutions</p>
-            <p>We build software that helps businesses grow and succeed.</p>
-            <a href="memberlink.html" class="btn btn-primary">View Our Products</a>
+            <div class="hero-content">
+                <div class="hero-badge">Next Rev Distribution, Inc.</div>
+                <h1>Custom Software<br><span class="text-accent">Integrations</span></h1>
+                <p class="hero-subtitle">We engineer precision technology solutions that connect business systems, automate workflows, and accelerate growth.</p>
+                <div class="hero-actions">
+                    <a href="memberlink.html" class="btn btn-primary">Our Solutions <span class="arrow">&rarr;</span></a>
+                    <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Products Preview -->
-    <section class="products-preview">
+    <!-- Capabilities -->
+    <section class="capabilities">
         <div class="container">
-            <h2>Our Products</h2>
-            <div class="product-grid">
-                <div class="product-card">
+            <div class="section-label">What We Do</div>
+            <div class="capabilities-grid reveal-group">
+                <div class="capability-card reveal">
+                    <span class="capability-num">01</span>
+                    <h3>Custom Development</h3>
+                    <p>Tailored software solutions designed for your specific business requirements and workflows.</p>
+                </div>
+                <div class="capability-card reveal">
+                    <span class="capability-num">02</span>
+                    <h3>System Integration</h3>
+                    <p>Connecting platforms and automating data flow to eliminate silos and increase efficiency.</p>
+                </div>
+                <div class="capability-card reveal">
+                    <span class="capability-num">03</span>
+                    <h3>Cloud Infrastructure</h3>
+                    <p>Scalable, secure architecture built on modern cloud platforms for reliability and performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">Our Products</div>
+                <h2>Solutions Built for Business</h2>
+                <p>Purpose-driven products designed to solve real-world challenges.</p>
+            </div>
+            <div class="product-grid reveal-group">
+                <div class="product-card reveal">
+                    <div class="card-label">Software</div>
                     <h3>Member Link</h3>
                     <p>Comprehensive membership management for Clover POS systems. Streamline member tracking, automate renewals, and grow your membership program.</p>
-                    <a href="memberlink.html" class="btn btn-secondary">Learn More</a>
+                    <a href="memberlink.html" class="btn btn-secondary">Learn More <span class="arrow">&rarr;</span></a>
                 </div>
-                <div class="product-card">
+                <div class="product-card reveal">
+                    <div class="card-label">Fleet Services</div>
                     <h3>NextRev Rentals</h3>
                     <p>Commercial cargo van rentals in Harrisburg, PA. Daily, weekly, and longer-term rentals for contractors, delivery services, and businesses.</p>
-                    <a href="rentals.html" class="btn btn-secondary">Learn More</a>
+                    <a href="rentals.html" class="btn btn-secondary">Learn More <span class="arrow">&rarr;</span></a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="reveal">
+                <h2>Ready to Work Together?</h2>
+                <p>Let's discuss how Next Rev can build the right solution for your business.</p>
+                <a href="contact.html" class="btn btn-primary">Contact Us <span class="arrow">&rarr;</span></a>
             </div>
         </div>
     </section>
@@ -67,13 +120,44 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Next Rev Distribution, Inc. All rights reserved.</p>
-            <p>
-                <a href="privacy.html">Privacy Policy</a> |
-                <a href="terms.html">Terms of Service</a> |
-                <a href="contact.html">Contact</a>
-            </p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="img/nextrev-logo.jpg" alt="Next Rev" class="footer-logo">
+                    <p>Technology solutions engineered for business growth. Serving clients since 2005.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="memberlink.html">Member Link</a></li>
+                        <li><a href="rentals.html">NextRev Rentals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get in Touch</h4>
+                    <ul>
+                        <li><a href="mailto:support@nxtrev.com">support@nxtrev.com</a></li>
+                        <li><a href="mailto:rentals@nxtrev.com">rentals@nxtrev.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Next Rev Distribution, Inc. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team — NextRev</title>
+    <meta name="description" content="Meet the leadership team at Next Rev Distribution. 20+ years of experience in technology, consulting, and software development.">
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
     <link rel="alternate icon" type="image/png" href="img/favicon.png">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team - NextRev</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar scrolled">
         <div class="container">
             <div class="nav-brand">
                 <a href="index.html">
                     <img src="img/nextrev-logo.jpg" alt="NextRev" class="logo">
                 </a>
             </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
@@ -31,24 +38,30 @@
                 <li><a href="team.html" class="active">Our Team</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="nav-overlay"></div>
         </div>
     </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Team</h1>
+            <p class="page-subtitle">Leadership driving innovation</p>
+        </div>
+    </section>
 
     <!-- Team Section -->
     <section class="content-section">
         <div class="container">
-            <h1>Our Team</h1>
-            <p class="subtitle">Leadership driving innovation</p>
-
-            <div class="team-grid">
-                <div class="team-member">
+            <div class="team-grid reveal-group">
+                <div class="team-member reveal">
                     <h2>Samuel Reed</h2>
                     <p class="team-role">Chairman of the Board</p>
                     <p>Founded Next Rev Distribution, Inc. in 2005 and has successfully built and led the company for 20 years as a proven entrepreneur in the technology sector. Under his visionary leadership, Next Rev has established itself as a trusted value-added reseller serving data centers, small business, carrier networks, and high-speed production networks throughout the US and Canada.</p>
                     <p>Samuel's entrepreneurial success stems from his ability to build long-term client relationships and maintain operational excellence, combined with deep financial management expertise and comprehensive market knowledge. As Chairman of the Board, Samuel oversees major strategic business decisions, monitors quarterly performance reviews, and serves as final decision-maker on significant strategic matters affecting the company's direction and growth.</p>
                 </div>
 
-                <div class="team-member">
+                <div class="team-member reveal">
                     <h2>Brooks Lewis</h2>
                     <p class="team-role">President & Treasurer</p>
                     <p>As President and Treasurer, Brooks manages financial and banking relationships and he brings extensive operational expertise to Next Rev. As former Director of Operations for an Amazon DSP, Brooks developed deep knowledge of day to day operations of tactical management strategies.</p>
@@ -56,7 +69,7 @@
                     <p>At Next Rev, Brooks focuses on business development, customer relationship management, market intelligence, strategic partnerships, industry networking, and growth strategy.</p>
                 </div>
 
-                <div class="team-member">
+                <div class="team-member reveal">
                     <h2>Scott Reed</h2>
                     <p class="team-role">Chief Technology Officer</p>
                     <p>Scott's background provides valuable insight for Next Rev's operations. In his role as Chief Technology Officer he creates and manages technology systems for Next Rev Distribution, Inc. He brings over 15 years of experience as a software developer with deep expertise in creating custom solutions for the transportation industry, most notably through his extensive work at Norfolk Southern, one of the nation's premier freight rail carriers.</p>
@@ -69,13 +82,44 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Next Rev Distribution, Inc. All rights reserved.</p>
-            <p>
-                <a href="privacy.html">Privacy Policy</a> |
-                <a href="terms.html">Terms of Service</a> |
-                <a href="contact.html">Contact</a>
-            </p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="img/nextrev-logo.jpg" alt="Next Rev" class="footer-logo">
+                    <p>Technology solutions engineered for business growth. Serving clients since 2005.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="memberlink.html">Member Link</a></li>
+                        <li><a href="rentals.html">NextRev Rentals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get in Touch</h4>
+                    <ul>
+                        <li><a href="mailto:support@nxtrev.com">support@nxtrev.com</a></li>
+                        <li><a href="mailto:rentals@nxtrev.com">rentals@nxtrev.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Next Rev Distribution, Inc. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — NextRev</title>
+    <meta name="description" content="Get in touch with Next Rev Distribution for software solutions, Member Link support, or NextRev Rentals inquiries.">
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
     <link rel="alternate icon" type="image/png" href="img/favicon.png">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - NextRev</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar scrolled">
         <div class="container">
             <div class="nav-brand">
                 <a href="index.html">
                     <img src="img/nextrev-logo.jpg" alt="NextRev" class="logo">
                 </a>
             </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
@@ -31,39 +38,51 @@
                 <li><a href="team.html">Our Team</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
+            <div class="nav-overlay"></div>
         </div>
     </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p class="page-subtitle">We're here to help</p>
+        </div>
+    </section>
 
     <!-- Contact Section -->
     <section class="content-section">
         <div class="container">
-            <h1>Contact Us</h1>
-            <p class="subtitle">We're here to help</p>
+            <div class="contact-grid reveal-group">
+                <div class="contact-card reveal">
+                    <h2>General Support</h2>
+                    <p>For all inquiries, including:</p>
+                    <ul>
+                        <li>General questions about Next Rev</li>
+                        <li>Member Link support and troubleshooting</li>
+                        <li>Clover integration assistance</li>
+                        <li>Product information</li>
+                    </ul>
+                    <a href="mailto:support@nxtrev.com" class="contact-email">support@nxtrev.com <span class="arrow">&rarr;</span></a>
+                </div>
 
-            <div class="contact-info">
-                <h2>General Support</h2>
-                <p>For all inquiries, including:</p>
-                <ul>
-                    <li>General questions about Next Rev</li>
-                    <li>Member Link support and troubleshooting</li>
-                    <li>Clover integration assistance</li>
-                    <li>Product information</li>
-                </ul>
-                <p><strong>Email:</strong> <a href="mailto:support@nxtrev.com">support@nxtrev.com</a></p>
+                <div class="contact-card reveal">
+                    <h2>NextRev Rentals</h2>
+                    <p>For inquiries related to NextRev Rentals:</p>
+                    <ul>
+                        <li>Rental quotes and pricing</li>
+                        <li>Equipment availability</li>
+                        <li>Rental reservations</li>
+                        <li>Questions about rental services</li>
+                    </ul>
+                    <a href="mailto:rentals@nxtrev.com" class="contact-email">rentals@nxtrev.com <span class="arrow">&rarr;</span></a>
+                </div>
 
-                <h2>NextRev Rentals</h2>
-                <p>For inquiries related to NextRev Rentals:</p>
-                <ul>
-                    <li>Rental quotes and pricing</li>
-                    <li>Equipment availability</li>
-                    <li>Rental reservations</li>
-                    <li>Questions about rental services</li>
-                </ul>
-                <p><strong>Email:</strong> <a href="mailto:rentals@nxtrev.com">rentals@nxtrev.com</a></p>
-
-                <h2>Business Hours</h2>
-                <p>Monday - Friday: 9:00 AM - 5:00 PM EST</p>
-                <p>We typically respond to inquiries within 1-2 business days.</p>
+                <div class="contact-card hours-card reveal">
+                    <h2>Business Hours</h2>
+                    <p>Monday &ndash; Friday: 9:00 AM &ndash; 5:00 PM EST</p>
+                    <p>We typically respond to inquiries within 1&ndash;2 business days.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -71,13 +90,44 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Next Rev Distribution, Inc. All rights reserved.</p>
-            <p>
-                <a href="privacy.html">Privacy Policy</a> |
-                <a href="terms.html">Terms of Service</a> |
-                <a href="contact.html">Contact</a>
-            </p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="img/nextrev-logo.jpg" alt="Next Rev" class="footer-logo">
+                    <p>Technology solutions engineered for business growth. Serving clients since 2005.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="memberlink.html">Member Link</a></li>
+                        <li><a href="rentals.html">NextRev Rentals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get in Touch</h4>
+                    <ul>
+                        <li><a href="mailto:support@nxtrev.com">support@nxtrev.com</a></li>
+                        <li><a href="mailto:rentals@nxtrev.com">rentals@nxtrev.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Next Rev Distribution, Inc. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
