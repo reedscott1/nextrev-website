@@ -15,7 +15,10 @@ Next Rev is an IT contracting company with two primary business streams:
 ```
 nextrev-website/
 ├── index.html        # Homepage
-├── products.html     # Products overview (Member Link)
+├── memberlink.html   # Member Link product page
+├── tipout.html       # Tip Out Calculator product page
+├── rentals.html      # NextRev Rentals product page
+├── team.html         # Our Team
 ├── contact.html      # Contact information
 ├── privacy.html      # Privacy Policy (DRAFT)
 ├── terms.html        # Terms of Service (DRAFT)

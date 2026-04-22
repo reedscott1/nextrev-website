@@ -24,7 +24,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle">Products</a>
                     <ul class="dropdown-menu">
-                        <li><a href="memberscan.html">Member Scan</a></li>
+                        <li><a href="memberlink.html">Member Link</a></li>
                         <li><a href="tipout.html">Tip Out Calculator</a></li>
                         <li><a href="rentals.html">NextRev Rentals</a></li>
                     </ul>
@@ -46,7 +46,7 @@
 
             <p>This Privacy Policy applies to all Next Rev products and services, including:</p>
             <ul>
-                <li><strong>Member Scan</strong> - Clover POS app that enables barcode scanning into any text field</li>
+                <li><strong>Member Link</strong> - Clover POS app for merchants with private memberships that identifies members at the point of sale and links them to orders</li>
                 <li><strong>Tip Out Calculator</strong> - Clover POS app for calculating shift tip distributions</li>
             </ul>
 
@@ -54,14 +54,16 @@
 
             <h2>2. Information We Collect</h2>
 
-            <h3>2.1 Member Scan</h3>
-            <p>Member Scan runs entirely on your Clover device and does not collect, transmit, or store any personal data.</p>
+            <h3>2.1 Member Link</h3>
+            <p>Member Link runs on your Clover device and accesses Clover merchant data to identify members and link them to orders. It does not send data to any Next Rev servers.</p>
             <ul>
-                <li>Runs as an accessibility service on your Clover device</li>
-                <li>Does not connect to the internet</li>
-                <li>Does not collect, store, or transmit any data</li>
-                <li>Does not access customer records, order data, or merchant information</li>
-                <li>Barcode scan text is passed directly to the focused text field on your device and is not recorded or stored by the app</li>
+                <li>Reads customer records and metadata notes via the Clover REST API to build a local member-number dictionary</li>
+                <li>Reads order state from Clover to check if a customer is already attached before assigning a new one</li>
+                <li>Writes orders to attach or remove members and to open new orders on behalf of scanned members</li>
+                <li>Reads the merchant's tables and order-type configuration to keep table names in sync with seated members and to create new orders with the correct order type</li>
+                <li>All data access is limited to the Clover permissions: Customers Read, Orders Read, Orders Write, Merchant Read, Merchant Write</li>
+                <li>Does not store any data on external servers — the member-number dictionary is cached locally on the device</li>
+                <li>Does not transmit data to Next Rev or any third party</li>
             </ul>
 
             <h3>2.2 Tip Out Calculator</h3>
@@ -76,11 +78,11 @@
                 <li>Does not transmit data to Next Rev or any third party</li>
             </ul>
 
-            <h3>2.2 Technical and Usage Data</h3>
+            <h3>2.3 Technical and Usage Data</h3>
             <p>Our device-only apps do not collect technical or usage data. Clover may independently collect device diagnostics as part of the Clover operating system, which is governed by Clover's own privacy policy.</p>
 
             <h2>3. How We Use Your Information</h2>
-            <p>Our current apps (Member Scan and Tip Out Calculator) do not collect any information. There is no data to use, share, or process.</p>
+            <p>Our current apps (Member Link and Tip Out Calculator) access Clover merchant data on the device to provide their functionality but do not collect, store, or process any data on Next Rev servers. There is no data sent to Next Rev to use, share, or process.</p>
             <p>If we release future products that collect data, this Privacy Policy will be updated accordingly before those products are made available.</p>
 
             <h2>4. How We Share Your Information</h2>
