@@ -26,6 +26,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="memberlink.html">Member Link</a></li>
                         <li><a href="tipout.html">Tip Out Calculator</a></li>
+                        <li><a href="tsr.html">Terminal Settlement Report</a></li>
                         <li><a href="rentals.html">NextRev Rentals</a></li>
                     </ul>
                 </li>
@@ -39,7 +40,7 @@
     <section class="content-section legal-document">
         <div class="container">
             <h1>Next Rev Privacy Policy</h1>
-            <p><em>Last Updated: April 7, 2026</em></p>
+            <p><em>Last Updated: May 5, 2026</em></p>
 
             <h2>1. Introduction</h2>
             <p>This Privacy Policy describes how Next Rev Distribution, Inc. ("Next Rev", "we", "our", or "us") collects, uses, discloses, and otherwise processes personal data in connection with our products and services.</p>
@@ -48,6 +49,7 @@
             <ul>
                 <li><strong>Member Link</strong> - Clover POS app for merchants with private memberships that identifies members at the point of sale and links them to orders</li>
                 <li><strong>Tip Out Calculator</strong> - Clover POS app for calculating shift tip distributions</li>
+                <li><strong>Terminal Settlement Report</strong> - Clover POS app that produces a per-shift cash drawer reconciliation receipt for bartenders</li>
             </ul>
 
             <p>By using any Next Rev product or service, you acknowledge that you have read and understood this Privacy Policy.</p>
@@ -78,11 +80,23 @@
                 <li>Does not transmit data to Next Rev or any third party</li>
             </ul>
 
-            <h3>2.3 Technical and Usage Data</h3>
+            <h3>2.3 Terminal Settlement Report</h3>
+            <p>Terminal Settlement Report runs on your Clover device and accesses Clover merchant data to produce a per-shift cash drawer reconciliation receipt for the bartender. It does not send data to any Next Rev servers.</p>
+            <ul>
+                <li>Accesses the logged-in employee and their recent shift data via the Clover Android SDK and REST API to identify the bartender and pre-fill the report's date range</li>
+                <li>Reads cash drawer events (starting bank, tip pay-outs, server cash settlements) via the Clover REST API to itemize cash drawer adjustments on the report</li>
+                <li>Reads order, payment, and refund data from your Clover device to compute cash sales, card sales, card tip totals, and the expected drawer total</li>
+                <li>All data access is read-only and limited to the Clover permissions: EMPLOYEES_R, ORDERS_R, PAYMENTS_R</li>
+                <li>Does not store any data on external servers — all processing happens on the device</li>
+                <li>Does not persist any local data — the report is computed on demand and exists only for the duration of the activity</li>
+                <li>Does not transmit data to Next Rev or any third party</li>
+            </ul>
+
+            <h3>2.4 Technical and Usage Data</h3>
             <p>Our device-only apps do not collect technical or usage data. Clover may independently collect device diagnostics as part of the Clover operating system, which is governed by Clover's own privacy policy.</p>
 
             <h2>3. How We Use Your Information</h2>
-            <p>Our current apps (Member Link and Tip Out Calculator) access Clover merchant data on the device to provide their functionality but do not collect, store, or process any data on Next Rev servers. There is no data sent to Next Rev to use, share, or process.</p>
+            <p>Our current apps (Member Link, Tip Out Calculator, and Terminal Settlement Report) access Clover merchant data on the device to provide their functionality but do not collect, store, or process any data on Next Rev servers. There is no data sent to Next Rev to use, share, or process.</p>
             <p>If we release future products that collect data, this Privacy Policy will be updated accordingly before those products are made available.</p>
 
             <h2>4. How We Share Your Information</h2>
