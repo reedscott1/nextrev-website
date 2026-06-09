@@ -1,0 +1,175 @@
+:root {
+  --md-primary-fg-color: #1a1a1a;
+  --md-primary-bg-color: #ffffff;
+  --md-accent-fg-color: #f0a500;
+  --md-accent-bg-color: #f0a500;
+}
+
+/* Gold accent for links */
+.md-typeset a {
+  color: #c48800;
+}
+.md-typeset a:hover {
+  color: #f0a500;
+}
+
+/* Gold nav active indicator */
+.md-nav__item--active > .md-nav__link {
+  color: #f0a500;
+}
+
+/* Header styling */
+.md-header {
+  background-color: #1a1a1a;
+}
+
+/* Hide the right-side TOC panel — single nav on the left only */
+.md-sidebar--secondary {
+  display: none !important;
+}
+
+/* Center main content */
+.md-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+/* Section headers in sidebar — bold, uppercase, clear separation */
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link,
+.md-nav--primary > .md-nav__list > .md-nav__item > label {
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #1a1a1a;
+  padding-top: 0.8rem;
+}
+
+/* Child items — indented, normal weight, smaller */
+.md-nav--primary > .md-nav__list > .md-nav__item .md-nav .md-nav__link {
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-transform: none;
+  letter-spacing: normal;
+  padding-left: 0.8rem;
+  color: #555;
+}
+
+/* Active child item — gold */
+.md-nav--primary > .md-nav__list > .md-nav__item .md-nav .md-nav__link--active {
+  color: #f0a500;
+  font-weight: 600;
+}
+
+/* Section divider lines */
+.md-nav--primary > .md-nav__list > .md-nav__item {
+  border-top: 1px solid #e0e0e0;
+}
+.md-nav--primary > .md-nav__list > .md-nav__item:first-child {
+  border-top: none;
+}
+
+/* Search highlight color */
+.md-search-result .md-typeset mark {
+  background-color: rgba(240, 165, 0, 0.3);
+}
+
+/* Breadcrumb path styling */
+.md-path {
+  color: #888;
+  font-size: 0.8rem;
+}
+
+/* Auth gate overlay */
+.auth-gate-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 26, 26, 0.95);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-gate-box {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 2.5rem;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+}
+
+.auth-gate-box h2 {
+  margin: 0 0 0.5rem 0;
+  color: #1a1a1a;
+  font-size: 1.4rem;
+}
+
+.auth-gate-box p {
+  margin: 0 0 1.5rem 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.auth-gate-box input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.auth-gate-box input:focus {
+  outline: none;
+  border-color: #f0a500;
+}
+
+.auth-gate-box button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #f0a500;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-gate-box button:hover {
+  background: #c48800;
+}
+
+.auth-gate-error {
+  color: #d32f2f;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  display: none;
+}
+
+/* Download PDF button — explicit colors so hover + text selection stay readable */
+.md-button.md-button--primary {
+  background-color: #1a1a1a;
+  border-color: #1a1a1a;
+  color: #ffffff !important;
+}
+.md-button.md-button--primary:hover,
+.md-button.md-button--primary:focus {
+  background-color: #f0a500;
+  border-color: #f0a500;
+  color: #1a1a1a !important;
+}
+.md-button.md-button--primary::selection,
+.md-button.md-button--primary *::selection {
+  background-color: #1a1a1a;
+  color: #f0a500;
+}
+
