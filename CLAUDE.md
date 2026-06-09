@@ -17,7 +17,6 @@ nextrev-website/
 ├── index.html        # Homepage
 ├── memberlink.html   # Member Link product page
 ├── tipout.html       # Tip Out Calculator product page
-├── rentals.html      # NextRev Rentals product page
 ├── team.html         # Our Team
 ├── contact.html      # Contact information
 ├── privacy.html      # Privacy Policy (DRAFT)
