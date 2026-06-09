@@ -7,13 +7,7 @@ const STORAGE_KEY = "nxtrev_training_auth";
 let gateActive = false;
 
 function isProtectedPage() {
-  const path = window.location.pathname;
-  // Home page is public — everything else requires access code.
-  // Accommodate every install location we deploy to.
-  if (path === "/" || path === "/index.html") return false;
-  if (path === "/clover-training/" || path === "/clover-training/index.html") return false;
-  if (path === "/clover-training" ) return false;
-  if (path.endsWith("/nextrev-clovertraining/") || path.endsWith("/nextrev-clovertraining/index.html")) return false;
+  // Every page requires the access code, including the home page.
   return true;
 }
 
