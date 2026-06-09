@@ -22,12 +22,17 @@ nextrev-website/
 ├── contact.html      # Contact information
 ├── privacy.html      # Privacy Policy (DRAFT)
 ├── terms.html        # Terms of Service (DRAFT)
+├── clover-training/  # Merchant training portal (synced from nextrev-clovertraining)
 ├── css/
 │   └── style.css     # Styling
 ├── img/
 │   └── nextrev-logo.jpg
 └── CNAME             # Custom domain configuration
 ```
+
+### clover-training/ subdirectory
+
+Do NOT hand-edit `clover-training/` — it's a build artifact synced from the `nextrev-clovertraining` repo. To update: run `.\scripts\deploy.ps1` in `C:\development\nextrev-clovertraining`, which rebuilds the MkDocs site + PDF and overwrites this directory. Then commit both repos and push.
 
 ## Deployment
 
@@ -59,3 +64,4 @@ The Privacy Policy and Terms of Service are **PLACEHOLDER documents** based on C
 
 - **Backend Services**: `C:\development\MemberLink` - Cloud Run microservices
 - **Clover Android App**: `C:\development\memberLink-android` - POS membership app
+- **Clover Training Portal**: `C:\development\nextrev-clovertraining` - source of the `clover-training/` subdirectory; rebuilt via `scripts\deploy.ps1` in that repo
