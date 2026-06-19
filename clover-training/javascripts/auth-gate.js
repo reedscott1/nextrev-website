@@ -54,7 +54,9 @@ function createGate() {
   var error = document.getElementById("auth-gate-error");
 
   function attemptAuth() {
-    var code = input.value.trim();
+    // Uppercase the input so the access code is case-insensitive
+    // (the stored hash is computed from the uppercase form).
+    var code = input.value.trim().toUpperCase();
     if (!code) return;
 
     hashCode(code).then(function(hash) {
