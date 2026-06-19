@@ -35,6 +35,27 @@
 }
 
 
+/* Sidebar nav title — replace the redundant site name with "Main Menu".
+   font-size:0 on the label hides the raw text node; child elements (like
+   the logo link) restore their own size; ::after adds the replacement. */
+.md-nav--primary > .md-nav__title {
+  font-size: 0;
+  line-height: 0;
+}
+.md-nav--primary > .md-nav__title > * {
+  font-size: 0.85rem;
+  line-height: normal;
+}
+.md-nav--primary > .md-nav__title::after {
+  content: "Main Menu";
+  font-size: 0.85rem;
+  line-height: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #1a1a1a;
+}
+
 /* Section headers in sidebar — bold, uppercase, clear separation */
 .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link,
 .md-nav--primary > .md-nav__list > .md-nav__item > label {

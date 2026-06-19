@@ -2,66 +2,90 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://nxtrev.com/clover-training/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-06-19</lastmod>
     </url>
     <url>
-         <loc>https://nxtrev.com/clover-training/orders/adding-items/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <loc>https://nxtrev.com/clover-training/bartender/record-cash-events/</loc>
+         <lastmod>2026-06-19</lastmod>
     </url>
     <url>
-         <loc>https://nxtrev.com/clover-training/orders/combining-tables/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <loc>https://nxtrev.com/clover-training/bartender/terminal-settlement-report/</loc>
+         <lastmod>2026-06-19</lastmod>
     </url>
     <url>
-         <loc>https://nxtrev.com/clover-training/orders/coursing-and-firing/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <loc>https://nxtrev.com/clover-training/closing-orders/bill-printing/</loc>
+         <lastmod>2026-06-19</lastmod>
     </url>
     <url>
-         <loc>https://nxtrev.com/clover-training/orders/moving-guests/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <loc>https://nxtrev.com/clover-training/closing-orders/take-payment/</loc>
+         <lastmod>2026-06-19</lastmod>
     </url>
     <url>
-         <loc>https://nxtrev.com/clover-training/orders/moving-items/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <loc>https://nxtrev.com/clover-training/closing-orders/tip-adjustment/</loc>
+         <lastmod>2026-06-19</lastmod>
     </url>
     <url>
-         <loc>https://nxtrev.com/clover-training/orders/opening-orders/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <loc>https://nxtrev.com/clover-training/general/menu-selection/</loc>
+         <lastmod>2026-06-19</lastmod>
     </url>
     <url>
-         <loc>https://nxtrev.com/clover-training/orders/printing-bills/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <loc>https://nxtrev.com/clover-training/general/pos-login/</loc>
+         <lastmod>2026-06-19</lastmod>
     </url>
     <url>
-         <loc>https://nxtrev.com/clover-training/orders/reassign-member/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <loc>https://nxtrev.com/clover-training/opening-orders/open-member-order/</loc>
+         <lastmod>2026-06-19</lastmod>
     </url>
     <url>
-         <loc>https://nxtrev.com/clover-training/orders/remove-member/</loc>
-         <lastmod>2026-06-09</lastmod>
-    </url>
-    <url>
-         <loc>https://nxtrev.com/clover-training/orders/removing-items/</loc>
-         <lastmod>2026-06-09</lastmod>
-    </url>
-    <url>
-         <loc>https://nxtrev.com/clover-training/pos-login/employee-pin/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <loc>https://nxtrev.com/clover-training/opening-orders/open-non-member-order/</loc>
+         <lastmod>2026-06-19</lastmod>
     </url>
     <url>
          <loc>https://nxtrev.com/clover-training/shifts/clock-in/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-06-19</lastmod>
     </url>
     <url>
          <loc>https://nxtrev.com/clover-training/shifts/clock-out/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-06-19</lastmod>
     </url>
     <url>
          <loc>https://nxtrev.com/clover-training/shifts/server-shift-report/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-06-19</lastmod>
     </url>
     <url>
          <loc>https://nxtrev.com/clover-training/shifts/tip-out-calculator/</loc>
-         <lastmod>2026-06-09</lastmod>
+         <lastmod>2026-06-19</lastmod>
+    </url>
+    <url>
+         <loc>https://nxtrev.com/clover-training/updating-orders/add-and-remove-items/</loc>
+         <lastmod>2026-06-19</lastmod>
+    </url>
+    <url>
+         <loc>https://nxtrev.com/clover-training/updating-orders/combining-tables/</loc>
+         <lastmod>2026-06-19</lastmod>
+    </url>
+    <url>
+         <loc>https://nxtrev.com/clover-training/updating-orders/coursing-and-firing/</loc>
+         <lastmod>2026-06-19</lastmod>
+    </url>
+    <url>
+         <loc>https://nxtrev.com/clover-training/updating-orders/modify-guest-count/</loc>
+         <lastmod>2026-06-19</lastmod>
+    </url>
+    <url>
+         <loc>https://nxtrev.com/clover-training/updating-orders/moving-guests/</loc>
+         <lastmod>2026-06-19</lastmod>
+    </url>
+    <url>
+         <loc>https://nxtrev.com/clover-training/updating-orders/moving-items/</loc>
+         <lastmod>2026-06-19</lastmod>
+    </url>
+    <url>
+         <loc>https://nxtrev.com/clover-training/updating-orders/moving-tables/</loc>
+         <lastmod>2026-06-19</lastmod>
+    </url>
+    <url>
+         <loc>https://nxtrev.com/clover-training/updating-orders/reassign-member/</loc>
+         <lastmod>2026-06-19</lastmod>
     </url>
 </urlset>
