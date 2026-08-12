@@ -81,7 +81,11 @@ See deployment documentation for DNS setup details.
 
 - Live Site: https://nxtrev.com
 - GitHub Repo: https://github.com/reedscott1/nextrev-website
-- Member Link Dashboard: https://qa.signthedailybook.com
+
+Note: this repo covers the nxtrev.com marketing site only. "Member Link" here means
+the Clover POS application — a device-only app that talks to no Next Rev server.
+Other Next Rev software delivered under separate contract is unrelated to this repo
+and is not covered by this site's privacy policy.
 
 ## Support
 
