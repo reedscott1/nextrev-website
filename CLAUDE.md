@@ -21,7 +21,6 @@ nextrev-website/
 ├── index.html        # Homepage
 ├── memberlink.html   # Member Link product page
 ├── tsr.html          # Terminal Settlement Report product page
-├── products.html     # Products overview
 ├── team.html         # Our Team
 ├── contact.html      # Contact information
 ├── privacy.html      # Privacy Policy (LIVE — see Legal Documents below)

@@ -6,16 +6,26 @@ Official website for Next Rev - Business Solutions
 
 Next Rev creates software solutions for businesses. Our products include:
 - **Member Link** - Membership management for Clover POS systems
+- **Terminal Settlement Report** - Per-shift cash drawer reconciliation for bartenders
+
+Both are private apps installed directly by Next Rev, not listed on a public app
+marketplace.
 
 ## Website Structure
 
 - `index.html` - Homepage
-- `products.html` - Products overview (Member Link)
+- `memberlink.html` - Member Link product page
+- `tsr.html` - Terminal Settlement Report product page
+- `team.html` - Our Team
 - `contact.html` - Contact information
-- `privacy.html` - Privacy Policy (DRAFT - needs customization)
-- `terms.html` - Terms of Service (DRAFT - needs customization)
+- `privacy.html` - Privacy Policy (live)
+- `terms.html` - Terms of Service (live)
+- `clover-training/` - Merchant training portal (build artifact, do not hand-edit)
 - `css/style.css` - Styling
 - `img/nextrev-logo.jpg` - Company logo
+
+A `products.html` overview page existed until 2026-08-12. It was orphaned when the
+Products dropdown and per-product pages were introduced, and has been removed.
 
 ## Deployment
 
@@ -23,17 +33,17 @@ This site is hosted on GitHub Pages and accessible at:
 - **Custom Domain**: https://nxtrev.com
 - **GitHub Pages**: https://reedscott1.github.io/nextrev-website
 
-## Legal Documents Status
+## Legal Documents
 
-⚠️ **IMPORTANT**: The Privacy Policy and Terms of Service are currently PLACEHOLDER documents based on Clover templates.
+`terms.html` and `privacy.html` are live, published documents. Both the Member Link and
+Terminal Settlement Report Clover App Market listings point at these URLs, so edits here
+reach app reviewers directly.
 
-**Action Required Before Publication**:
-1. Business partner must customize all [BRACKETED] sections
-2. Legal counsel must review final documents
-3. Remove all draft notices
-4. Update "Last Updated" dates
-
-See the yellow warning boxes on privacy.html and terms.html for detailed customization checklists.
+⚠️ **Never write "Clover" into `terms.html`.** Clover's App Market review requires private
+apps to use generic wording — "POS System" or "Platform". `privacy.html` follows the same
+convention. Section numbering in `terms.html` is load-bearing: §5 Confidentiality, §7 Fees,
+§9 Compliance with Privacy Laws, §10 Data Subject Rights are the sections Clover named by
+number. See `CLAUDE.md` for the full rule.
 
 ## Local Development
 
@@ -55,8 +65,8 @@ To test locally:
 
 ### To Update Legal Documents:
 1. Edit `privacy.html` and/or `terms.html`
-2. Replace [BRACKETED] placeholders
-3. Remove draft notices when finalized
+2. Keep the wording generic — no "Clover" (see Legal Documents above)
+3. Update the "Last Updated" date
 4. Commit and push
 
 ## DNS Configuration
