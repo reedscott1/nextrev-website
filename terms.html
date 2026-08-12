@@ -25,14 +25,13 @@
                     <a href="#" class="dropdown-toggle">Products</a>
                     <ul class="dropdown-menu">
                         <li><a href="memberlink.html">Member Link</a></li>
-                        <li><a href="tipout.html">Tip Out Calculator</a></li>
                         <li><a href="tsr.html">Terminal Settlement Report</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle">Training</a>
                     <ul class="dropdown-menu">
-                        <li><a href="clover-training/">Clover Training</a></li>
+                        <li><a href="clover-training/">POS Training</a></li>
                     </ul>
                 </li>
                 <li><a href="team.html">Our Team</a></li>
@@ -45,52 +44,42 @@
     <section class="content-section legal-document">
         <div class="container">
             <h1>Next Rev Terms of Service</h1>
-            <p><em>Last Updated: May 5, 2026</em></p>
+            <p><em>Last Updated: August 12, 2026</em></p>
 
             <h2>1. Acceptance of Terms</h2>
             <p>By accessing or using any Next Rev product or service, you ("Merchant", "you", or "your") agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you may not use our services.</p>
+
+            <p>These Terms govern your use of Next Rev applications installed on your point-of-sale system (the "Platform" or "POS System"). Your use of our apps is also subject to the terms and conditions of the Platform on which they are installed.</p>
 
             <p>These Terms incorporate by reference our Privacy Policy, available at <a href="https://nxtrev.com/privacy.html">https://nxtrev.com/privacy.html</a>, which describes how we collect, use, and protect your data.</p>
 
             <h2>2. Services Description</h2>
 
-            <p>Next Rev develops software for Clover POS devices. Our current products include:</p>
+            <p>Next Rev develops software for point-of-sale systems. Our current products include:</p>
 
             <h3>2.1 Member Link</h3>
-            <p>A Clover Android app for merchants with private memberships. Member Link lets staff scan a membership card to open a tab, attach a member to an in-progress order from the Clover payment screen, and keep numeric table names in sync with the member seated at each table.</p>
+            <p>A POS application for merchants with private memberships. Member Link lets staff scan a membership card to open a tab and attach a member to an in-progress order from the POS payment screen.</p>
             <ul>
-                <li>Runs on the Clover device</li>
-                <li>Connects to the Clover REST API to read customer records, read and write orders, and read and write merchant configuration (tables, order types)</li>
-                <li>No account or login required beyond your Clover merchant account</li>
+                <li>Runs on the POS device</li>
+                <li>Connects to the Platform's REST API to read customer records, read and write orders, and read merchant configuration (order types)</li>
+                <li>No account or login required beyond your merchant account on the Platform</li>
                 <li>Does not transmit data to Next Rev or any third party</li>
             </ul>
 
-            <h3>2.2 Tip Out Calculator</h3>
-            <p>A calculator for distributing shift tips among employees by category on Clover devices.</p>
+            <h3>2.2 Terminal Settlement Report</h3>
+            <p>A POS application that produces a per-shift cash drawer reconciliation receipt for bartenders.</p>
             <ul>
-                <li>Runs on the Clover device</li>
-                <li>Connects to the Clover REST API to retrieve employee shift data</li>
-                <li>Reads order, inventory, and employee data from your Clover merchant account (read-only)</li>
-                <li>No account or login required beyond your Clover merchant account</li>
+                <li>Runs on the POS device</li>
+                <li>Connects to the Platform's REST API to read employee shift records, cash drawer events, and the bartender's orders, payments, and refunds (read-only)</li>
+                <li>Prints the settlement receipt to the POS device's built-in receipt printer</li>
+                <li>Does not persist any data on the device &mdash; the report is computed on demand</li>
+                <li>No account or login required beyond your merchant account on the Platform</li>
                 <li>Does not transmit data to Next Rev or any third party</li>
             </ul>
 
-            <h3>2.3 Terminal Settlement Report</h3>
-            <p>A Clover Android app that produces a per-shift cash drawer reconciliation receipt for bartenders.</p>
-            <ul>
-                <li>Runs on the Clover device</li>
-                <li>Connects to the Clover REST API to read employee shift records, cash drawer events, and the bartender's orders, payments, and refunds (read-only)</li>
-                <li>Prints the settlement receipt to the Clover device's built-in receipt printer</li>
-                <li>No account or login required beyond your Clover merchant account</li>
-                <li>Does not transmit data to Next Rev or any third party</li>
-            </ul>
+            <h2>3. Your Obligations</h2>
 
-            <h2>3. Clover App Market</h2>
-            <p>Next Rev apps are distributed through the Clover App Market. Your use of our apps is also subject to the Clover App Market terms and conditions. Installation and billing are handled through the Clover App Market.</p>
-
-            <h2>4. Your Obligations</h2>
-
-            <h3>4.1 General Obligations</h3>
+            <h3>3.1 General Obligations</h3>
             <p>As a merchant using Next Rev apps, you agree to:</p>
             <ul>
                 <li>Use the apps only for lawful business purposes</li>
@@ -99,40 +88,52 @@
                 <li>Not redistribute or resell the apps</li>
             </ul>
 
-            <h3>4.2 Prohibited Uses</h3>
+            <h3>3.2 Prohibited Uses</h3>
             <p>You may not use Next Rev apps to:</p>
             <ul>
                 <li>Engage in fraudulent or deceptive practices</li>
                 <li>Transmit malware, viruses, or harmful code</li>
-                <li>Interfere with the operation of Clover devices or other apps</li>
+                <li>Interfere with the operation of POS devices or other apps</li>
             </ul>
 
-            <h2>5. Intellectual Property</h2>
+            <h2>4. Intellectual Property</h2>
 
-            <h3>5.1 Next Rev Property</h3>
+            <h3>4.1 Next Rev Property</h3>
             <p>Next Rev retains all rights, title, and interest in and to its apps, including:</p>
             <ul>
                 <li>Software code, architecture, and algorithms</li>
                 <li>User interfaces, designs, and visual elements</li>
-                <li>Trademarks, logos, and branding (Next Rev, Member Link, Tip Out Calculator, Terminal Settlement Report)</li>
+                <li>Trademarks, logos, and branding (Next Rev, Member Link, Terminal Settlement Report)</li>
             </ul>
 
-            <h3>5.2 License</h3>
-            <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use our apps on your Clover devices for your internal business purposes, subject to these Terms.</p>
+            <h3>4.2 License</h3>
+            <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use our apps on your POS devices for your internal business purposes, subject to these Terms.</p>
+
+            <h2>5. Confidentiality, Data, and Ideas</h2>
+
+            <p>5.1&nbsp;&nbsp;Neither of us will disclose non-public information about the other's business; including, without limitation, the terms of these Terms, technical specifications (whether related to the apps or otherwise), customer lists, or information relating to a party's operational, strategic, or financial matters (together, <strong>Confidential Information</strong>). Confidential Information does not include information that (1) is or subsequently becomes publicly available (through no fault of the recipient); (2) the recipient lawfully possesses before its disclosure; (3) is independently developed without reliance on the discloser's Confidential Information; or (4) is received from a third party that is not obligated to keep it confidential. Each of us will implement and maintain reasonable safeguards to protect the other's Confidential Information.</p>
+
+            <p>5.2&nbsp;&nbsp;Neither of us may disclose the other's Confidential Information except (1) to our respective directors, officers, employees, or representatives that need to know it in order to perform our obligations under these Terms; (2) in response to a subpoena or court order; or (3) as required by applicable law, rule, or regulation.</p>
+
+            <p>5.3&nbsp;&nbsp;Next Rev may use data or information obtained through the apps to provide its services, for research and development, or in aggregated and anonymized form to provide services generally; all subject to applicable laws. Information Next Rev collects about you or your consumers is subject to Next Rev's privacy policy, which is accessible at <a href="https://nxtrev.com/privacy.html">https://nxtrev.com/privacy.html</a>.</p>
+
+            <p>5.4&nbsp;&nbsp;You may provide, or Next Rev may invite you to provide, comments or ideas about the apps (including, without limitation, improvements to them) (together, <strong>Ideas</strong>). By submitting any Ideas, you agree that (1) they are not Confidential Information; (2) they are not subject to any use or disclosure restrictions (express or implied); (3) you claim no rights in them; and (4) Next Rev has no obligation to notify or compensate you in connection with their disclosure or use. You release Next Rev from all liability or obligations that may arise from the receipt, review, disclosure, or use of any Idea that you submit.</p>
 
             <h2>6. Service Availability</h2>
 
             <h3>6.1 Availability</h3>
-            <p>Our apps run locally on your Clover device and do not depend on external servers. App availability depends on your Clover device functioning properly.</p>
+            <p>Our apps run locally on your POS device and do not depend on external servers. App availability depends on your POS device functioning properly.</p>
 
             <h3>6.2 Updates</h3>
-            <p>We may release updates to our apps through the Clover App Market. Updates may include bug fixes, improvements, or new features.</p>
+            <p>We may release updates to our apps through the Platform's app marketplace. Updates may include bug fixes, improvements, or new features.</p>
 
             <h3>6.3 Support</h3>
             <p>Support is available via email at <a href="mailto:support@nxtrev.com">support@nxtrev.com</a>.</p>
 
-            <h2>7. Payment Terms</h2>
-            <p>App pricing is listed on the Clover App Market. Any applicable fees are processed through the Clover billing system in accordance with Clover App Market requirements.</p>
+            <h2>7. Fees</h2>
+            <p>Next Rev's apps are provided to you free of charge. There is no subscription fee, license fee, or usage charge, and no payment method is required to install or use them. Next Rev does not process payments and does not bill you through the Platform or by any other means.</p>
+
+            <p>If Next Rev offers a paid product or a paid tier of an existing app in the future, it will be offered under separate terms that you must accept before any charge applies.</p>
 
             <h2>8. Limitation of Liability</h2>
 
@@ -149,7 +150,25 @@
             <h3>8.3 Exceptions</h3>
             <p>These limitations do not apply to liability that cannot be excluded or limited under applicable law.</p>
 
-            <h2>9. Indemnification</h2>
+            <h2>9. Compliance with Privacy Laws</h2>
+
+            <p>Next Rev Inc. makes the following additional commitments, representations, and warranties to you, Merchant:</p>
+
+            <p>9.1&nbsp;&nbsp;Next Rev will only process Merchant Data and Personal Information on behalf of, and as Service Provider of, the Merchant, and not collect, retain, use, or disclose that data for any purpose other than to perform Next Rev's obligations under these Terms, as permitted under CCPA and other applicable privacy and data protection laws (collectively, <strong>Privacy Laws</strong>). In no event will Next Rev sell (as defined by Privacy Laws) any such personal information.</p>
+
+            <p>9.2&nbsp;&nbsp;Next Rev will not collect, use, retain, disclose, sell, or otherwise make Merchant Data or Personal Information available for Next Rev's own commercial purposes or in a way that does not comply with the CCPA or other Privacy Laws.</p>
+
+            <p>9.3&nbsp;&nbsp;Next Rev will limit personal information collection, use, retention, and disclosure to activities reasonably necessary and proportionate to provide the Services set forth in these Terms or another compatible operational purpose.</p>
+
+            <h2>10. Data Subject Rights &mdash; Assistance with Requests</h2>
+
+            <p>10.1&nbsp;&nbsp;Next Rev will reasonably cooperate and assist Merchant with meeting Merchant's CCPA and Privacy Law compliance obligations and respond to CCPA-related inquiries, including responding to verifiable consumer requests, taking into account, the nature of Next Rev's processing, and the information available to Next Rev. Next Rev will make available to Merchant, in a manner consistent with the functionality of the Service and Next Rev's role as a Service Provider of Personal Information of data subjects, the ability to fulfill data subject requests to exercise their rights under Privacy Laws.</p>
+
+            <p>10.2&nbsp;&nbsp;If Next Rev receives a request from Merchant's data subject to exercise one or more of its rights under Privacy Laws in connection with the Services, Next Rev will redirect the data subject to make its request directly to Merchant. Merchant will be responsible for responding to any such request including, where possible, by using the functionality of the Services. Next Rev shall comply with reasonable requests by Merchant to assist with Merchant's response to such a data subject request.</p>
+
+            <p>10.3&nbsp;&nbsp;Next Rev must notify the Merchant immediately if it receives any complaint, notice, or communication that directly or indirectly relates either party's compliance with Privacy Laws relating to provisioning of the Services.</p>
+
+            <h2>11. Indemnification</h2>
             <p>You agree to indemnify, defend, and hold harmless Next Rev and its officers, directors, employees, and agents from and against any claims, damages, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising from:</p>
             <ul>
                 <li>Your use of Next Rev apps</li>
@@ -157,33 +176,33 @@
                 <li>Your violation of any law or regulation</li>
             </ul>
 
-            <h2>10. Termination</h2>
+            <h2>12. Termination</h2>
 
-            <h3>10.1 Termination by You</h3>
-            <p>You may stop using any Next Rev app at any time by uninstalling it from your Clover device through the Clover App Market.</p>
+            <h3>12.1 Termination by You</h3>
+            <p>You may stop using any Next Rev app at any time by uninstalling it from your POS device.</p>
 
-            <h3>10.2 Termination by Next Rev</h3>
-            <p>We may discontinue any app at any time with reasonable notice through the Clover App Market.</p>
+            <h3>12.2 Termination by Next Rev</h3>
+            <p>We may discontinue any app at any time with reasonable notice through the Platform.</p>
 
-            <h2>11. Changes to Terms</h2>
+            <h2>13. Changes to Terms</h2>
             <p>We may modify these Terms at any time. We will notify you of material changes by posting updated Terms on this page with a new "Last Updated" date. Your continued use of Next Rev apps after changes constitutes acceptance of the modified Terms.</p>
 
-            <h2>12. Governing Law and Disputes</h2>
+            <h2>14. Governing Law and Disputes</h2>
 
-            <h3>12.1 Governing Law</h3>
+            <h3>14.1 Governing Law</h3>
             <p>These Terms shall be governed by and construed in accordance with the laws of the State of Delaware, United States, without regard to its conflict of law provisions.</p>
 
-            <h3>12.2 Dispute Resolution</h3>
+            <h3>14.2 Dispute Resolution</h3>
             <p>Any dispute arising from or relating to these Terms shall be resolved as follows:</p>
             <ul>
                 <li><strong>Informal Resolution:</strong> You agree to first attempt to resolve any dispute informally by contacting us at <a href="mailto:support@nxtrev.com">support@nxtrev.com</a>.</li>
                 <li><strong>Jurisdiction:</strong> If informal resolution fails, any legal action shall be brought exclusively in the state or federal courts located in Delaware.</li>
             </ul>
 
-            <h3>12.3 Class Action Waiver</h3>
+            <h3>14.3 Class Action Waiver</h3>
             <p>YOU AGREE THAT ANY DISPUTE RESOLUTION PROCEEDINGS WILL BE CONDUCTED ONLY ON AN INDIVIDUAL BASIS AND NOT IN A CLASS, CONSOLIDATED, OR REPRESENTATIVE ACTION.</p>
 
-            <h2>13. General Provisions</h2>
+            <h2>15. General Provisions</h2>
 
             <p><strong>Entire Agreement:</strong> These Terms, together with the Privacy Policy, constitute the entire agreement between you and Next Rev regarding the use of our apps.</p>
 
@@ -193,9 +212,9 @@
 
             <p><strong>Assignment:</strong> You may not assign or transfer these Terms without our prior written consent. We may assign these Terms to any successor or affiliate without restriction.</p>
 
-            <p><strong>Notices:</strong> We may send notices through the Clover App Market or to the email address associated with your Clover account. You may send notices to <a href="mailto:support@nxtrev.com">support@nxtrev.com</a>.</p>
+            <p><strong>Notices:</strong> We may send notices through the Platform or to the email address associated with your merchant account. You may send notices to <a href="mailto:support@nxtrev.com">support@nxtrev.com</a>.</p>
 
-            <h2>14. Contact Information</h2>
+            <h2>16. Contact Information</h2>
             <p>For questions about these Terms, contact us:</p>
             <p>
                 <strong>Next Rev Inc.</strong><br>
