@@ -2,90 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://nxtrev.com/clover-training/</loc>
-         <lastmod>2026-06-19</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://nxtrev.com/clover-training/bartender/record-cash-events/</loc>
-         <lastmod>2026-06-19</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://nxtrev.com/clover-training/bartender/terminal-settlement-report/</loc>
-         <lastmod>2026-06-19</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://nxtrev.com/clover-training/closing-orders/bill-printing/</loc>
-         <lastmod>2026-06-19</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://nxtrev.com/clover-training/closing-orders/take-payment/</loc>
-         <lastmod>2026-06-19</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://nxtrev.com/clover-training/closing-orders/tip-adjustment/</loc>
-         <lastmod>2026-06-19</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://nxtrev.com/clover-training/general/menu-selection/</loc>
-         <lastmod>2026-06-19</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://nxtrev.com/clover-training/general/pos-login/</loc>
-         <lastmod>2026-06-19</lastmod>
+         <lastmod>2026-09-03</lastmod>
+    </url>
+    <url>
+         <loc>https://nxtrev.com/clover-training/gift-cards/check-balance/</loc>
+         <lastmod>2026-09-03</lastmod>
+    </url>
+    <url>
+         <loc>https://nxtrev.com/clover-training/gift-cards/load-a-clover-gift-card/</loc>
+         <lastmod>2026-09-03</lastmod>
+    </url>
+    <url>
+         <loc>https://nxtrev.com/clover-training/gift-cards/old-gift-cards/</loc>
+         <lastmod>2026-09-03</lastmod>
+    </url>
+    <url>
+         <loc>https://nxtrev.com/clover-training/gift-cards/pay-with-clover-gift-card/</loc>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://nxtrev.com/clover-training/opening-orders/open-member-order/</loc>
-         <lastmod>2026-06-19</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://nxtrev.com/clover-training/opening-orders/open-non-member-order/</loc>
-         <lastmod>2026-06-19</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://nxtrev.com/clover-training/shifts/clock-in/</loc>
-         <lastmod>2026-06-19</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://nxtrev.com/clover-training/shifts/clock-out/</loc>
-         <lastmod>2026-06-19</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://nxtrev.com/clover-training/shifts/server-shift-report/</loc>
-         <lastmod>2026-06-19</lastmod>
-    </url>
-    <url>
-         <loc>https://nxtrev.com/clover-training/shifts/tip-out-calculator/</loc>
-         <lastmod>2026-06-19</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://nxtrev.com/clover-training/updating-orders/add-and-remove-items/</loc>
-         <lastmod>2026-06-19</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://nxtrev.com/clover-training/updating-orders/combining-tables/</loc>
-         <lastmod>2026-06-19</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://nxtrev.com/clover-training/updating-orders/coursing-and-firing/</loc>
-         <lastmod>2026-06-19</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://nxtrev.com/clover-training/updating-orders/modify-guest-count/</loc>
-         <lastmod>2026-06-19</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://nxtrev.com/clover-training/updating-orders/moving-guests/</loc>
-         <lastmod>2026-06-19</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://nxtrev.com/clover-training/updating-orders/moving-items/</loc>
-         <lastmod>2026-06-19</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://nxtrev.com/clover-training/updating-orders/moving-tables/</loc>
-         <lastmod>2026-06-19</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://nxtrev.com/clover-training/updating-orders/reassign-member/</loc>
-         <lastmod>2026-06-19</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
 </urlset>
