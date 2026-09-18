@@ -82,15 +82,35 @@ function createGate() {
   input.focus();
 }
 
+// A link may carry the code as ?code=HIL2026 — the QR code handed to employees does.
+// Checked exactly like a typed code (case-insensitive, compared by hash). On a match
+// this browser is remembered just as if the code had been typed. Either way the
+// parameter is stripped from the address bar with replaceState, so the code does not
+// linger in history, bookmarks or a link someone copies and shares.
+function consumeUrlCode() {
+  var params = new URLSearchParams(window.location.search);
+  var code = params.get("code");
+  if (!code) return Promise.resolve();
+  params.delete("code");
+  var query = params.toString();
+  window.history.replaceState(
+    null, "", window.location.pathname + (query ? "?" + query : "") + window.location.hash);
+  return hashCode(code.trim().toUpperCase()).then(function(hash) {
+    if (hash === ACCESS_CODE_HASH) localStorage.setItem(STORAGE_KEY, ACCESS_CODE_HASH);
+  });
+}
+
 // Run on page load and on navigation (MkDocs Material uses instant loading)
 function checkAuth() {
   // mkdocs-exporter renders pages over file:// during PDF build — never gate those.
   if (window.location.protocol === "file:") return;
-  if (isProtectedPage() && !isAuthenticated()) {
-    createGate();
-  } else {
-    gateActive = false;
-  }
+  consumeUrlCode().then(function() {
+    if (isProtectedPage() && !isAuthenticated()) {
+      createGate();
+    } else {
+      gateActive = false;
+    }
+  });
 }
 
 document.addEventListener("DOMContentLoaded", checkAuth);
